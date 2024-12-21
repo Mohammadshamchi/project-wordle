@@ -1,12 +1,10 @@
 import Game from '../Game';
-import Header from '../Header/Header'
-import ShowGuess from '../ShowGuess/ShowGuess';
+import Header from '../Header/Header';
 
 function App() {
   return (
     <div className="wrapper">
       <Header />
-      <ShowGuess />
       <div className="game-wrapper">
         <Game />
       </div>
