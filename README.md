@@ -149,7 +149,7 @@ There are two things that should help you tackle this exercise:
 **Acceptance Criteria:**
 
 - Create a new `Guess` component. 6 instances should be rendered at all times, no matter how many guesses have been submitted.
-- The `Guess` component should render 5 spans, each with the class of `cell`.
+- The `Guess` component should render 5 spans, each with theclass of `cell`.
 - Each cell should contain a letter, if the `Guess` instance has been given a value. If not, the cell should be blank.
 - Use the `NUM_OF_GUESSES_ALLOWED` constant, when needed.
 - No `key` warnings in the console.
@@ -167,7 +167,7 @@ Inside `/src/game-helpers.js`, you'll find a helper function, `checkGuess`. As p
 For example:
 
 ```js
-checkGuess('WHALE', 'LEARN');
+checkGuess("WHALE", "LEARN");
 /*
   Returns:
 
@@ -225,10 +225,7 @@ The user wins the game when their guessed word is identical to the `answer`. The
 
 ```html
 <div class="happy banner">
-  <p>
-    <strong>Congratulations!</strong> Got it in
-    <strong>3 guesses</strong>.
-  </p>
+  <p><strong>Congratulations!</strong> Got it in <strong>3 guesses</strong>.</p>
 </div>
 ```
 
