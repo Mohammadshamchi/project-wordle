@@ -17,7 +17,7 @@ function Game() {
       id: Math.random(),
     };
     setGuesses([...guesses, nextGuess]);
-    console.log("This is our lates guesses", guesses);
+    // console.log("This is our lates guesses", guesses);
   }
   return (
     <>
