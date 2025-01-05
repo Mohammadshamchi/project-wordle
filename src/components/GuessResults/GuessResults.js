@@ -3,7 +3,7 @@ import Guess from "../Guess/Guess";
 import { range } from "../../utils";
 import { NUM_OF_GUESSES_ALLOWED } from "../../constants";
 
-function GuessResults({ guesses }) {
+function GuessResults({ guesses, answer }) {
   // console.log("This is our guessssss", { guesses });
   return (
     <div className="guess-results">
@@ -26,7 +26,7 @@ function GuessResults({ guesses }) {
           // </p>
 
           // each time is expected to render a word I call the Guess Component!
-          <Guess key={num} guessValue={guesses[num]?.value} />
+          <Guess key={num} guessValue={guesses[num]?.value} answer={answer} />
         );
       })}
     </div>

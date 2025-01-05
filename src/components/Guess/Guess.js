@@ -1,8 +1,11 @@
 import React from "react";
 import { range } from "../../utils";
+import { checkGuess } from "../../game-helpers";
 
-function Guess({ guessValue }) {
+function Guess({ guessValue, answer }) {
   // console.log({ guessValue });
+  const result = checkGuess(guessValue, answer);
+  console.log({ result });
   return (
     <p className="guess">
       {/* and here instead of map through guessValue (guessValue.split(""))we add range to keep it 5 character */}
@@ -24,7 +27,10 @@ function Guess({ guessValue }) {
 
       */}
       {range(5).map((num) => (
-        <span className="cell" key={num}>
+        <span
+          className={`cell ${result ? result[num].status : undefined}`}
+          key={num}
+        >
           {guessValue ? guessValue[num] : undefined}
         </span>
       ))}
