@@ -3,8 +3,9 @@ import Guess from "../Guess/Guess";
 import { range } from "../../utils";
 import { NUM_OF_GUESSES_ALLOWED } from "../../constants";
 
-function GuessResults({ guesses, answer }) {
+function GuessResults({ guesses, answer, gameStatus }) {
   // console.log("This is our guessssss", { guesses });
+  console.log({ gameStatus });
   return (
     <div className="guess-results">
       {/* in Exercise 2 : instead of rendering guesses buy it self as i make it as an object with key of 
